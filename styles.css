@@ -79,9 +79,27 @@ nav>ul>li>a{
     display: flex;
 }
 
+#o-content p{
+    padding: 10px;
+}
+
 #o-content{
     border: 1px solid grey;
     box-shadow: 2px 2px 5px  grey;
     margin-left: 20px;
     border-radius: 3px;
+ }
+
+ .order1{
+     margin-top: 100px;
+ }
+
+ #order2{
+     background-image: url("https://cdn.pixabay.com/photo/2015/10/05/18/15/pizza-973075_960_720.jpg");
+     /* background-attachment: fixed; */
+     /* background-position: center center; */
+     background-repeat: no-repeat;
+     background-size:cover;
+     width: 100%;
+     height:90vh;
  }
