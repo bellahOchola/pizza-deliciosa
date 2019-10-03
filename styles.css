@@ -69,12 +69,19 @@ nav>ul>li>a{
     margin-bottom:  50px;
 }
 
-.o-content img{
-    width:90%;
-    height:90%;
-    margin-left: 20px;
+#o-content img{
+    width:100%;
+    height:auto;
+    padding: 0px;
 }
 
 .offer2{
     display: flex;
 }
+
+#o-content{
+    border: 1px solid grey;
+    box-shadow: 2px 2px 5px  grey;
+    margin-left: 20px;
+    border-radius: 3px;
+ }
