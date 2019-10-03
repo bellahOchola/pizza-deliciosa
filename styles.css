@@ -25,10 +25,9 @@ nav>ul>li>a{
 }
 
 .about{
-    /* margin-top: 1000px; */
-    background: transparent;
-    height:1000px;
-    color: black;
+    /* background: transparent; */
+    height:auto;
+    /* color: black; */
     display: flex;
 }
 
@@ -40,13 +39,6 @@ nav>ul>li>a{
     background-size: cover;
     min-height:700px;
 
-}
-
-.d-block>img{
-    width:100px;
-    height:100px;
-    border-radius:50px;
-    border:1px solod black;
 }
 
 .about img{
@@ -70,4 +62,9 @@ nav>ul>li>a{
     margin-top: 50px;
     color:white;
     font-size: 17px;
+}
+
+.offer1{
+    margin-top:50px;
+    margin-bottom:  50px;
 }
