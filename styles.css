@@ -96,10 +96,16 @@ nav>ul>li>a{
 
  #order2{
      background-image: url("https://cdn.pixabay.com/photo/2015/10/05/18/15/pizza-973075_960_720.jpg");
-     /* background-attachment: fixed; */
+     background-attachment: fixed;
      /* background-position: center center; */
      background-repeat: no-repeat;
      background-size:cover;
      width: 100%;
      height:90vh;
+ }
+
+ .order3{
+     background-color: rgba(0, 0, 0, 0.8);
+     color:white;
+     
  }
