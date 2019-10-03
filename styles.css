@@ -9,6 +9,8 @@ nav{
     background-color: black;
     height:50px;
     color:white;
+    position: fixed;
+    width:100%;
     /* margin-left: auto; */
 }
 
@@ -20,4 +22,21 @@ nav>ul>li>a{
     color:white;
     margin-right:50px;
     font-weight:bold;
+}
+
+.about{
+    /* margin-top: 1000px; */
+    background: black;
+    height:500px;
+    color: white;
+}
+
+.image{
+    background-image: url("https://cdn.pixabay.com/photo/2015/04/28/21/20/pizza-744405_960_720.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:500px;
+
 }
