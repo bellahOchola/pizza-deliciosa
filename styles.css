@@ -3,6 +3,10 @@ img{
     height:auto;
 }
 
+body{
+    font-family: 'Handlee', cursive;
+}
+
 nav{
     margin:0;
     padding: 0;
