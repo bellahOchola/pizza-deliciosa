@@ -26,9 +26,9 @@ nav>ul>li>a{
 
 .about{
     /* margin-top: 1000px; */
-    background: black;
-    height:500px;
-    color: white;
+    background: transparent;
+    height:1000px;
+    color: black;
 }
 
 .image{
