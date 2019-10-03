@@ -90,22 +90,36 @@ nav>ul>li>a{
     border-radius: 3px;
  }
 
- .order1{
+ /* .order1{
      margin-top: 100px;
- }
+ } */
 
  #order2{
      background-image: url("https://cdn.pixabay.com/photo/2015/10/05/18/15/pizza-973075_960_720.jpg");
      background-attachment: fixed;
-     /* background-position: center center; */
+     background-position: center center;
      background-repeat: no-repeat;
      background-size:cover;
      width: 100%;
      height:90vh;
+     margin-top: 100px;
  }
 
  .order3{
      background-color: rgba(0, 0, 0, 0.8);
-     color:white;
-     
+     color:white; 
+     position: relative;
+     top: 50px;
+     left: 60px;
+     width:90%;
+     height:500px;
+     padding:20px;
+}
+
+ .custom-select{
+     width:40%;
+     margin-bottom: 40px;
+     margin-top:20px; 
+     display: flex;
+     flex-direction: column;
  }
