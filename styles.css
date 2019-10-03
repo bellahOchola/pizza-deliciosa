@@ -2,3 +2,22 @@ img{
     width:100%;
     height:auto;
 }
+
+nav{
+    margin:0;
+    padding: 0;
+    background-color: black;
+    height:50px;
+    color:white;
+    /* margin-left: auto; */
+}
+
+nav>ul>li{
+    display: inline-block;
+}
+
+nav>ul>li>a{
+    color:white;
+    margin-right:50px;
+    font-weight:bold;
+}
