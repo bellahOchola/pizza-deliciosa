@@ -59,12 +59,15 @@ nav>ul>li>a{
 
 .about1{
     margin-bottom: 70px;
+    margin-top:30px;
 }
 
 .para1{
-    background-color:blue;
+    background-color:black;
     width:30%;
     height:30%;
     padding: 30px;
     margin-top: 50px;
+    color:white;
+    font-size: 17px;
 }
