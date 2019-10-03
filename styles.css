@@ -53,10 +53,18 @@ nav>ul>li>a{
     width:30%;
     height:30%;
     /* border-radius: 50%; */
-    margin-right: 50px;
+    margin-right: 80px;
     margin-left: 150px;
 }
 
 .about1{
     margin-bottom: 70px;
+}
+
+.para1{
+    background-color:blue;
+    width:30%;
+    height:30%;
+    padding: 30px;
+    margin-top: 50px;
 }
