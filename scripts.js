@@ -19,3 +19,11 @@ $("#psize"). click(function(){
     this.topping=topping;
     this.crust=crust;
   }
+
+  $(".btn").submit(function(){
+    var prefer1 = $("#prefer").val();
+    var size1 = $("#siz").val();
+    var top1 =$("#top").val();
+    var crust1 =$("#crus").val();
+
+  });
