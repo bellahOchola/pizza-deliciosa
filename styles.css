@@ -169,3 +169,7 @@ nav>ul>li>a{
  input{
     margin-right: 10px;
  }
+
+ #deliver{
+     display: none;
+ }
