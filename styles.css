@@ -172,4 +172,24 @@ nav>ul>li>a{
 
  #deliver{
      display: none;
+     position:relative;
+     left: 600px;
+     top:-400px;
+ }
+
+ #check{
+     margin-top: 20px;
+ }
+
+ .showPrice{
+     /* display: none; */
+     font-size: 20px;
+     font-weight: bold;
+     padding:20px;
+ }
+
+ #totalDelivery, #message{
+     font-size: 20px;
+     font-weight: bold;
+     margin-top: 20px;
  }

@@ -136,19 +136,36 @@
               <option value="2">2</option>
               <option value="3">3</option>
           </select>
+          <button type="submit" id="enter" class="btn btn-info">Place Order</button>
+          <p class="showPrice"></p>
           <div  id="deliver">
             <p>Delivery fee is 200/=</p>
             Your Location:
-            <input type="text" name="location" class="" value=""><br>
-            <button type="submit" id="enter" class="btn btn-info">Checkout</button>
+            <input type="text" name="location" class="locate" value=""><br>
+            <button type="submit" id="check" class="btn btn-success">Checkout</button>
+            <p id="totalDelivery"></p>
+            <p id="message"></p>
           </div>
-          <button type="submit" id="enter" class="btn btn-info">Place Order</button>
-      </form>
+        
+        </form>
+          
         </div>
+    </div>
+    <div id="total">
+
     </div>
     <div id="showOrder">
       <h2>Your Order</h2>
-      <ul id="myOrder"></ul>
+      <table id="myOrder">
+        <tr>
+          <td class="pName"></td>
+          <td class="pSize"></td>
+          <td class="pCrust"></td>
+          <td class="pTopping"></td>
+          <td class="totals"></td>
+        </tr>
+
+      </table>
     </div>
     <div class="contacts">
         <h1 class="text-center">Contacts</h1>

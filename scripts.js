@@ -4,7 +4,7 @@ var crustPrice = 0;
 var total=0;
 var toppingPrice;
   
-function Pizza(name, size, topping, crust){
+function Pizza(name, size, topping, crust, total){
   this.name=name;
   this.size=size;
   this.topping=topping;
@@ -63,21 +63,36 @@ $("form").submit(function(){
     var pizzaNumber= $(".quantify").val();
     return pizza1() * parseInt(pizzaNumber);
   }
-  alert("Current price is " + pizzaAmount());
-  $("#deliver").show()
 
-var order= new Pizza(prefer1, size1, topping1, crust1, total);
-    $("ul#myOrder").append("<li><span class='orders'>" + order.fullOrder() + "</span></li>");
+  $("enter").click(function(){
+    return pizzaAmount();
+  });
+  // alert("Current price is " + pizzaAmount());
+  $(".showPrice").text("The current price is " + pizzaAmount());
+  // $(".showPrice").slideUp(12000);
+
+  $("#deliver").slideDown(3000);
+  $("#check").click(function(){
+    var destination = $("input.locate").val();
+    function totalForDelivery(){
+     return pizzaAmount() + 200;
+ }
+  $("#totalDelivery").text("Total price is " + totalForDelivery());
+  $("#message").text("Thank you."+ "Your order will be delivered at " + destination)
+ });
+//  var order= new Pizza(prefer1, size1, topping1, crust1, total);
+// // $("#myOrder").append('<tr><td class="pName">'+ order.name +'</td><td class="pSize">' + order.size + '</td><td class="pCrust">'+order.crust + '</td><td class="pTopping">'+order.topping+'</td><td class="totals">'+order.total+'</td></tr>');
+//     $("table#myOrder").append("<tr><td class='orders'>" + order.fullOrder() + "<td><tr>");
     
-    $("#showOrder").show();
+//     $("#showOrder").show();
+    
 
   });
-  
-  // $(".toDeliver").show();
 
 
   Pizza.prototype.fullOrder= function() {
     return this.name + " " + this.size + " " + this.topping + " " + this.crust + " " + this.total;
   }
-  
+  console.log(fullOrder());
+  // alert(fullOrder());
   
