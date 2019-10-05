@@ -10,15 +10,18 @@ function Pizza(name, size, topping, crust){
 $("form").submit(function(){
   event.preventDefault();
     prefer1 = $(".prefer").find(":selected").text();
-    size1 = $("#siz").val();
-    top1 =$("#top").val();
-    crust1 =$("#crus").val();
+    size1 = $(".siz").find(":selected").text();
+    top1 =$(".top").find(":selected").text();
+    crust1 =$(".crus").find(":selected").text();
 
     var order= new Pizza(prefer1, size1, top1, crust1);
-    $("ul#myOrder").append("<li><span class='orders'>" + order.name + "</span></li>");
-
-    // $(".prefer").val("");
-    // $("input#new-last-name").val("");
+    $("ul#myOrder").append("<li><span class='orders'>" + order.fullOrder() + "</span></li>");
+    
+    $("#showOrder").show();
   });
+
+  Pizza.prototype.fullOrder= function() {
+    return this.name + " " + this.size + " " + this.topping + " " + this.crust;
+  }
   
   
