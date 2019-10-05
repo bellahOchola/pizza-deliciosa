@@ -106,34 +106,35 @@
           <form id="frm">
               Choose your preference
             <select class="custom-select prefer">
-                <option class="pf" selected>Choose...</option>
-                <option class="pf" value="">Chicken-tikka</option>
-                <option class="pf" value="">Pizza-garlic</option>
-                <option  class="pf"value="">American-bacon</option>
+                <option  selected>Choose...</option>
+                <option class="pf" value="chicken-tikka">Chicken-tikka</option>
+                <option class="pf" value="pizza-garlic">Pizza-garlic</option>
+                <option  class="pf"value="american-bacon">American-bacon</option>
             </select>
             Choose your preffered size
             <select class="custom-select siz">
                 <option selected>Choose...</option>
-                <option value="">Small-550</option>
-                <option value="">Medium-800</option>
-                <option value="">Large-1000</option>
+                <option value="small">Small-550</option>
+                <option value="medium">Medium-800</option>
+                <option value="large">Large-1000</option>
             </select>
             Choose the crust
             <select class="custom-select crus">
                 <option selected>Choose...</option>
-                <option value="">Crispy-90</option>
-                <option value="">Stuffed-70</option>
-                <option value="">Glutten-free-150</option>
+                <option value="crispy">Crispy-90</option>
+                <option value="stuffed">Stuffed-70</option>
+                <option value="glutten-free">Glutten-free-150</option>
             </select>
-            <input type="checkbox" name="" value="Bacon">Bacon
-            <input type="checkbox" name="" value="cheese">Cheese
-            <input type="checkbox" name="" value="cheese">Mushroom<br>
+            <input type="checkbox" name="top" class="checkin" value="Bacon">Bacon
+            <input type="checkbox" name="top" class="checkin" value="cheese">Cheese
+            <input type="checkbox" name="top" class="checkin" value="cheese">Veges
+            <input type="checkbox" name="top" class="checkin" value="cheese">Mushroom<br>
             Quantity
-            <select class="custom-select top">
+            <select class="custom-select quantify">
               <option selected>Choose...</option>
-              <option value="">Bacon-50</option>
-              <option value="">Mushroom-30</option>
-              <option value="">Cheese-40</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
           </select>
           <button type="submit" id="enter" class="btn btn-info">Submit</button>
       </form>
