@@ -45,21 +45,20 @@
                 <img src="https://cdn.pixabay.com/photo/2017/10/01/15/52/pan-2805959_960_720.jpg" alt="New York" width="1100" height="500">
               </div>
             </div> -->
-            </div> -->
+            </div>
     <!-- <div id="carouselExampleSlidesOnly" class=" carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active">
             <div class="carousel-item active" data-interval="10000">
-                  <img src="https://cdn.pixabay.com/photo/2015/10/05/18/15/pizza-973075_960_720.jpg"  alt="...">
+                  <img src="https://cdn.pixabay.com/photo/2015/10/05/18/15/pizza-973075_960_720.jpg" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item" data-interval="5000">
-                <img src="https://cdn.pixabay.com/photo/2016/08/25/19/38/baker-1620504_960_720.jpg" alt="...">
+                <img src="https://cdn.pixabay.com/photo/2016/08/25/19/38/baker-1620504_960_720.jpg" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item" data-interval="2000">
-                <img src="https://cdn.pixabay.com/photo/2017/10/01/15/52/pan-2805959_960_720.jpg"  alt="...">
+                <img src="https://cdn.pixabay.com/photo/2017/10/01/15/52/pan-2805959_960_720.jpg" class="d-block w-100" alt="...">
               </div>
             </div>
-          </div> -->
+    </div> -->
           <!-- <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -104,58 +103,50 @@
     <div id="order2">
         <div class="order3">
             <h2 class="order1">Make your Order now</h3>
+          <form id="frm">
               Choose your preference
-            <select class="custom-select" id="prefer">
-                <option selected>Choose...</option>
-                <option value="1">Chicken-tikka</option>
-                <option value="2">Pizza-garlic</option>
-                <option value="3">American-bacon</option>
+            <select class="custom-select prefer">
+                <option class="pf" selected>Choose...</option>
+                <option class="pf" value="">Chicken-tikka</option>
+                <option class="pf" value="">Pizza-garlic</option>
+                <option  class="pf"value="">American-bacon</option>
             </select>
             Choose your preffered size
-            <select class="custom-select" id="siz">
+            <select class="custom-select siz">
                 <option selected>Choose...</option>
-                <option value="550">Small</option>
-                <option value="850">Medium</option>
-                <option value="1100">Large</option>
+                <option value="">Small-550</option>
+                <option value="">Medium-800</option>
+                <option value="">Large-1000</option>
             </select>
             Choose the crust
-            <select class="custom-select" id="crus">
+            <select class="custom-select crus">
                 <option selected>Choose...</option>
-                <option value="100">Crispy</option>
-                <option value="150">Stuffed</option>
-                <option value="90">Glutten-free</option>
+                <option value="">Crispy-90</option>
+                <option value="">Stuffed-70</option>
+                <option value="">Glutten-free-150</option>
             </select>
             Choose the toppings
-            <select class="custom-select" id="top">
+            <select class="custom-select top">
               <option selected>Choose...</option>
-              <option value="90">Bacon</option>
-              <option value="70">Mushroom</option>
-              <option value="50">Cheese</option>
+              <option value="">Bacon-50</option>
+              <option value="">Mushroom-30</option>
+              <option value="">Cheese-40</option>
           </select>
-          <button type="button" class="btn btn-info">Submit</button>
-            <!-- <select id="pname">
-                <option value="red-dessert">red-dessert</option>
-                <option value="1">monchi</option>
-                <option value="2">french-pizza</option>
-                <option value="3">periperi</option>
-            </select><br><br>
-                <select id="psize">
-                    <option value="">small---550</option>
-                    <option value="">large---1100</option>
-                    <option value="">medium---900</option>
-                </select><br><br>
-                <select id="pcrust">
-                    <option value="0">crispy</option>
-                    <option value="1">stuffed</option>
-                    <option value="2">glutten-free</option>
-                </select>
-             -->
+          <button type="submit" id="enter" class="btn btn-info">Submit</button>
+      </form>
         </div>
+    </div>
+    <div>
+      <h2>Your Order</h2>
+      <ul id="myOrder"></ul>
     </div>
     <div class="contacts">
         <h1 class="text-center">Contacts</h1>
 
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha384-mlceH9HlqLp7GMKHrj5Ara1+LvdTZVMx4S1U43/NxCvAkzIo8WJ0FE7duLel3wVo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="scripts.js"></script>
