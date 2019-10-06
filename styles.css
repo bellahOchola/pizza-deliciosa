@@ -159,6 +159,16 @@ nav>ul>li>a{
      
  }
 
+ .map{
+    display: flex;
+    margin-left: 200px;
+    margin-top: 50px;
+ }
+
+ .mapouter{
+     margin-left: 70px;
+ }
+
  #showOrder{
      display:none;
  }
