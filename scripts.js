@@ -64,10 +64,9 @@ $("form").submit(function(){
     return pizza1() * parseInt(pizzaNumber);
   }
 
-  $("enter").click(function(){
+  $("#enter").click(function(){
     return pizzaAmount();
   });
-  // alert("Current price is " + pizzaAmount());
   $(".showPrice").text("The current price is " + pizzaAmount());
   // $(".showPrice").slideUp(12000);
 
@@ -88,8 +87,6 @@ $("form").submit(function(){
     
 
   });
-
-
   Pizza.prototype.fullOrder= function() {
     return this.name + " " + this.size + " " + this.topping + " " + this.crust + " " + this.total;
   }
