@@ -7,8 +7,6 @@
     <title>pizza-pact</title>
     <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel ="stylesheet" href="styles.css">
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script> -->
 </head>
 <body>
     <nav>
@@ -48,74 +46,70 @@
     </div>
     <div id="order2">
         <div class="order3">
-            <h2 class="order1" id="ord">Make your Order now</h3>
-          <form id="frm">
-              Choose your preference
-            <select class="custom-select prefer">
-                <option  selected>Choose...</option>
-                <option class="pf" value="chicken-tikka">Chicken-tikka</option>
-                <option class="pf" value="pizza-garlic">Pizza-garlic</option>
-                <option  class="pf"value="american-bacon">American-bacon</option>
-                <option  class="pf"value="pizza-mozarella">Pizza-mozarella</option>
-                <option  class="pf"value="pepperoni-pizza">Pepperoni-pizza</option>
-                <option  class="pf"value="macro-cheese">Macro-cheese</option>
-            </select>
-            Choose your preffered size
-            <select class="custom-select siz">
-                <option selected>Choose...</option>
-                <option value="small">Small-550</option>
-                <option value="medium">Medium-800</option>
-                <option value="large">Large-1000</option>
-            </select>
-            Choose the crust
-            <select class="custom-select crus">
-                <option selected>Choose...</option>
-                <option value="crispy">Crispy-90</option>
-                <option value="stuffed">Stuffed-70</option>
-                <option value="glutten-free">Glutten-free-150</option>
-            </select>
-            Toppings @100 each<br>
-            <input type="checkbox" name="top" class="checkin" value="Bacon">Bacon
-            <input type="checkbox" name="top" class="checkin" value="cheese">Cheese
-            <input type="checkbox" name="top" class="checkin" value="cheese">Veges
-            <input type="checkbox" name="top" class="checkin" value="cheese">Mushroom<br>
-            Quantity
-            <select class="custom-select quantify">
-              <option selected>Choose...</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-          </select>
-          <button type="submit" id="enter" class="btn btn-info">Place Order</button>
-          <p class="showPrice"></p>
-          <div  id="deliver">
-            <p>Delivery fee is 200/=</p>
-            Your Location:
-            <input type="text" name="location" class="locate" value=""><br>
-            <button type="submit" id="check" class="btn btn-success">Checkout</button>
-            <p id="totalDelivery"></p>
-            <p id="message"></p>
-          </div>
-        
-        </form>
-          
+            <h2 class="order1" id="ord">Make your Order now</h2>
+            <form id="frm">
+                Choose your preference
+                <select class="custom-select prefer">
+                    <option  selected>Choose...</option>
+                    <option class="pf" value="chicken-tikka">Chicken-tikka</option>
+                    <option class="pf" value="pizza-garlic">Pizza-garlic</option>
+                    <option  class="pf"value="american-bacon">American-bacon</option>
+                    <option  class="pf"value="pizza-mozarella">Pizza-mozarella</option>
+                    <option  class="pf"value="pepperoni-pizza">Pepperoni-pizza</option>
+                    <option  class="pf"value="macro-cheese">Macro-cheese</option>
+                </select>
+                Choose your preffered size
+                <select class="custom-select siz">
+                    <option selected>Choose...</option>
+                    <option value="small">Small-550</option>
+                    <option value="medium">Medium-800</option>
+                    <option value="large">Large-1000</option>
+                </select>
+                Choose the crust
+                <select class="custom-select crus">
+                    <option selected>Choose...</option>
+                    <option value="crispy">Crispy-90</option>
+                    <option value="stuffed">Stuffed-70</option>
+                    <option value="glutten-free">Glutten-free-150</option>
+                </select>
+                Toppings @100 each<br>
+                <input type="checkbox" name="top" class="checkin" value="Bacon">Bacon
+                <input type="checkbox" name="top" class="checkin" value="cheese">Cheese
+                <input type="checkbox" name="top" class="checkin" value="cheese">Veges
+                <input type="checkbox" name="top" class="checkin" value="cheese">Mushroom<br>
+                Quantity
+                <select class="custom-select quantify">
+                    <option selected>Choose...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <button type="submit" id="enter" class="btn btn-info">Place Order</button>
+                <p class="showPrice"></p>
+                <div  id="deliver">
+                    <p>Delivery fee is 200/=</p>
+                    Your Location:
+                    <input type="text" name="location" class="locate" value=""><br>
+                    <button type="submit" id="check" class="btn btn-success">Checkout</button>
+                    <p id="totalDelivery"></p>
+                    <p id="message"></p>
+                </div>
+            </form>
         </div>
     </div>
     <div id="total">
-
     </div>
     <div id="showOrder">
       <h2>Your Order</h2>
       <table id="myOrder">
-        <tr>
-          <td class="pName"></td>
-          <td class="pSize"></td>
-          <td class="pCrust"></td>
-          <td class="pTopping"></td>
-          <td class="totals"></td>
-        </tr>
-
-      </table>
+            <tr>
+                <td class="pName"></td>
+                <td class="pSize"></td>
+                <td class="pCrust"></td>
+                <td class="pTopping"></td>
+                <td class="totals"></td>
+            </tr>
+        </table>
     </div>
     <div class="contacts" id="us">
         <h1 class="text-center">Contact Us</h1>
@@ -138,7 +132,6 @@
                 <style>.text-center{font-weight:bold;}</style>
         </footer>
     </div>
-  
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha384-mlceH9HlqLp7GMKHrj5Ara1+LvdTZVMx4S1U43/NxCvAkzIo8WJ0FE7duLel3wVo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="scripts.js"></script>
