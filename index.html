@@ -13,24 +13,25 @@
 <body>
     <nav>
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Order</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#ord">Order</a></li>
+            <li><a href="#us">Contacts</a></li>
         </ul>
     </nav>
-    <div class="image container-fluid">
-        <div class="main">
+    <div class="image container-fluid" id="home">
+        <div class="main text-center">
             <h1>La Pizzeria De Bellah</h1>
             <p>One-stop pizza hub....Make your order now!!</p>
         </div>
     </div>
-    <h1 class="about1 text-center">About Us</h1>
+    <h1 class="about1 text-center" id="about">About Us</h1>
     <div class="about text-center">
         <img src="https://cdn.pixabay.com/photo/2015/11/12/22/05/pizza-1041104_960_720.jpg" alt="">
         <p class="para1">We are located along Ngong road next to Green House mall.<br>It is approximately 30 minutes drive from town. <br>We mainly offer different<br> types of pizza all at different prizes.<br>We have been in operation since October last year and <br>we'll be very gratefull if you become part of our family.</p>
     </div>
-    <h1 class="offer1 text-center">What we Offer</h1>
+    <h1 class="offer1 text-center" id="services">What we Offer</h1>
     <div class="offer2">
         <div id="o-content">
             <img src="https://cdn.pixabay.com/photo/2017/05/24/19/32/pizza-2341377_960_720.jpg" alt="">
@@ -47,7 +48,7 @@
     </div>
     <div id="order2">
         <div class="order3">
-            <h2 class="order1">Make your Order now</h3>
+            <h2 class="order1" id="ord">Make your Order now</h3>
           <form id="frm">
               Choose your preference
             <select class="custom-select prefer">
@@ -73,6 +74,7 @@
                 <option value="stuffed">Stuffed-70</option>
                 <option value="glutten-free">Glutten-free-150</option>
             </select>
+            Toppings @100 each<br>
             <input type="checkbox" name="top" class="checkin" value="Bacon">Bacon
             <input type="checkbox" name="top" class="checkin" value="cheese">Cheese
             <input type="checkbox" name="top" class="checkin" value="cheese">Veges
@@ -115,7 +117,7 @@
 
       </table>
     </div>
-    <div class="contacts">
+    <div class="contacts" id="us">
         <h1 class="text-center">Contact Us</h1>
         <div class="map">
             <div id="arrange">
@@ -131,8 +133,9 @@
                 <style>.mapouter{position:relative;text-align:right;height:248px;width:456px;}.gmap_canvas {overflow:hidden;background:none!important;height:248px;width:456px;}</style>
             </div>
         </div>
-        <footer>
-                Copyright © 2019|La Pizzeria
+        <footer class="text-center">
+                Copyright © 2019 | La Pizzeria
+                <style>.text-center{font-weight:bold;}</style>
         </footer>
     </div>
   
