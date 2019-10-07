@@ -18,12 +18,12 @@ $("form").submit(function(){
   prefer1 = $(".prefer").find(":selected").val();
   size1 = $(".siz").find(":selected").val();
   crust1 =$(".crus").find(":selected").val();
-  // console.log(crust1);
+  console.log(size1);
   topping1=[];
   $.each($("input[name='top']:checked"), function(){            
       topping1.push($(this).val());
   });
-  console.log(topping1.join(", "));
+  // console.log(topping1.join(", "));
 
   
   switch(size1){
@@ -79,14 +79,15 @@ $("form").submit(function(){
   $("#totalDelivery").text("Total price is " + totalForDelivery());
   $("#message").text("Thank you."+ "Your order will be delivered at " + destination)
  });
-//  var order= new Pizza(prefer1, size1, topping1, crust1, total);
-// // $("#myOrder").append('<tr><td class="pName">'+ order.name +'</td><td class="pSize">' + order.size + '</td><td class="pCrust">'+order.crust + '</td><td class="pTopping">'+order.topping+'</td><td class="totals">'+order.total+'</td></tr>');
-//     $("table#myOrder").append("<tr><td class='orders'>" + order.fullOrder() + "<td><tr>");
+ var order= new Pizza(prefer1, size1, topping1, crust1, total);
+
+ console.log(size1);
+$("#myOrder").append('<tr><td class="">'+ order.name +'</td><td class="pSize">' + order.size + '</td><td class="pCrust">'+order.crust + '</td><td class="pTopping">'+order.topping+'</td><td class="totals">'+order.total+'</td></tr>');
+    // $("table#myOrder").append("<tr><td class='orders'>" + order.fullOrder() + "<td><tr>");
     
 //     $("#showOrder").show();
     
 
-  });
   Pizza.prototype.fullOrder= function() {
     return this.name + " " + this.size + " " + this.topping + " " + this.crust + " " + this.total;
   }
@@ -94,3 +95,4 @@ $("form").submit(function(){
   // alert(fullOrder());
   
   
+});
